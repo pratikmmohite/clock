@@ -1,2 +1,2 @@
-# clock
-Beautiful Clock
+# Clock Gallery
+pratikm.dev/clock
