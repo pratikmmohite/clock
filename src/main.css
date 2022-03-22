@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    
+}
+body{
+    background: rgb(222, 238, 5);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.h_hand{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+.clock_dial_12{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.t{
+    color:#525252;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.t12{
+    top: 25px;
+    left: 50%;
+}
+.t3{
+    top: 50%;
+    left: calc(100% - 25px);
+}
+.t6{
+    top: calc(100% - 25px);
+    left: 50%;
+}
+.t9{
+    top: 50%;
+    left: 25px;
+}
+
+#clock{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clock_center{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(25, 118, 210);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock_hand{
+    height: 30%;
+    width: 6px;
+    background-color: blue;
+    position: absolute;
+    left: calc(50% - 3px);
+    bottom: 50%;
+    transform-origin: bottom center 0px;
+    transition: transform linear 1s;
+    border-radius: 50%;
+}
+
+#h{
+    background-color: red;
+    opacity: 0.5;
+    height: 30%;
+}
+#m{
+    background-color: blue;
+    opacity: 0.5;
+    height: 35%;
+}
+#s{
+    background-color: green;
+    opacity: 0.5;
+    height: 40%;
+}
+
+
+.t_n{
+    color:#525252;
+    padding: 20px;
+    font-size: large;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t1_7{
+    transform: rotate(120deg);
+}
+.t1_7 span{
+    transform: rotate(-120deg);
+}
+
+.t2_8{
+    transform: rotate(150deg);
+}
+.t2_8 span{
+    transform: rotate(-150deg);
+}
+
+.t3_9{
+    transform: rotate(180deg);
+}
+.t3_9 span{
+    transform: rotate(-180deg);
+}
+
+.t4_10{
+    transform: rotate(210deg);
+}
+.t4_10 span{
+    transform: rotate(-210deg);
+}
+.t5_11{
+    transform: rotate(240deg);
+}
+.t5_11 span{
+    transform: rotate(-240deg);
+}
+
+.t6_10{
+    transform: rotate(270deg);
+}
+.t6_10 span{
+    transform: rotate(-270deg);
+}
