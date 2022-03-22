@@ -19,7 +19,7 @@ function updateTime(){
     seconds = currentTime.getSeconds();
 
     let h_angle = hours * 30 + (min/60 * 30);
-    let m_angle = min * 6;
+    let m_angle = min * 6 + (seconds/60 * 6);;
     let s_angle =min * 360 +  seconds * 6;
     
     h.style.transform = "rotate("+h_angle+"deg)";
