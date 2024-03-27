@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Config Environment
-        run: git config --global user.email {{ vars.USER_EMAIL }} && git config --global user.name {{ vars.USER_NAME }}
+        run: git config --global user.email ${{ vars.USER_EMAIL }} && git config --global user.name ${{ vars.USER_NAME }}
       - name: Clone Production Repo
         uses: actions/checkout@v4.1.2
         with:
