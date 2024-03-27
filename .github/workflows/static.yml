@@ -27,6 +27,8 @@ jobs:
       name: production
     runs-on: ubuntu-latest
     steps:
+      - name: Config Environment
+        run: git config --global user.email {{ vars.USER_EMAIL }} && git config --global user.name {{ vars.USER_NAME }}
       - name: Clone Production Repo
         uses: actions/checkout@v4.1.2
         with:
@@ -40,6 +42,7 @@ jobs:
           path: './build'
       - name: Copy file
         run: cp ./build/index.html ./pratikm/projects/bit/clock.html
+        
       - name: Commit and push changes
         run: cd pratikm && git add . && git commit -m "Updated clock" && git push
 
