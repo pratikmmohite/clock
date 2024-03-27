@@ -32,6 +32,8 @@ jobs:
         with:
           path: './pratikm'
           repository: ${{ vars.PRODUCTION_URL }}
+          token: ${{ vars.ACCESS_TOKEN }}
+          ref: main
       - name: Clone Current Project Repo
         uses: actions/checkout@v4.1.2
         with:
